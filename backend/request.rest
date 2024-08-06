@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+####
+GET http://localhost:5000/users/639bbdb2db6a53508c263300
+
+####
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+ "name": "Anvarbek Xaydarov",
+ "email": "anvar@gmail.com",
+ "gender": "Female"
+}
+
+####
+PATCH http://localhost:5000/users/639bbfee2b91a25a2de44c7b
+Content-Type: application/json
+
+{
+ "name": "Xaydarov Anvarbek Xabibulla o'g'li",
+ "email": "anvar11@gmail.com",
+ "gender": "Male"
+}
+
+####
+DELETE http://localhost:5000/users/639cd788e2bd7c81e1b59827
