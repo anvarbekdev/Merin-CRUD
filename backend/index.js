@@ -1,3 +1,4 @@
+﻿import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -5,7 +6,7 @@ import UserRouter from "./routes/UserRoute.js";
 
 const app = express();
 mongoose.connect(
-	"mongodb+srv://TonicDevalop777:TonicDevalop777@cluster0.prropwc.mongodb.net/?retryWrites=true&w=majority",
+	process.env.MONGODB_URI,
 	{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
